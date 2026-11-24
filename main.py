@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Warning Label for Humans: One Line, Big Laugh — entry program.
 
-Writes a single original warning-label line (147 characters) to
+Writes a single original warning-label line (157 characters) to
 /output/entry.txt: the safety warning that should come printed on every
 human being. The line is written from scratch for this bounty; it copies
 no other entry and no existing text.
@@ -11,13 +11,14 @@ import os
 import sys
 from pathlib import Path
 
-# One original line (147 characters): a printed safety label for the
+# One original line (157 characters): a printed safety label for the
 # contents of every human — handle with snacks. The side effects are the
-# joke, and the last few words land it.
+# joke, and the last few words land it: the label quotes the human
+# replying to a question nobody asked.
 ENTRY = (
-    "WARNING: Contents: one (1) human. Handle with snacks. Side effects "
-    "include strong opinions, unfinished sentences, and replying "
-    "'per my last email'."
+    "WARNING: Contents: one (1) human. Handle with snacks. Side effects: "
+    "strong opinions, unfinished sentences, and 'per my last email' "
+    "to questions nobody asked."
 )
 
 # Output path: overridable for local testing via MAKEFUN_OUTPUT_PATH.
